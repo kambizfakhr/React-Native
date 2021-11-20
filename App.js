@@ -19,27 +19,15 @@ export default function App() {
  ])
   return (
     <View style={styles.container}>
-      <FlatList
-        numColumns = {3}
-        keyExtractor = {(item) => item.id}
-        data={people}
-        renderItem ={({item}) => (
-          <Text style={styles.item}> {item.name}</Text>
-        )
-      }
-      />
-
-
-      {/* <ScrollView>
+       <ScrollView>
         {people.map(item =>(
           <View key={item.key}>
             <Text style={styles.item}> {item.name}</Text>
           </View>
         ))}
-       </ScrollView> */}
+       </ScrollView> 
     </View>
     
-
   );
 }
 
